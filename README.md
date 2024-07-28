@@ -2,21 +2,21 @@
 !apt-get install -y ffmpeg
 
 import speech_recognition as sr
-from pydub import AudioSegment
-from google.colab import files
+    from pydub import AudioSegment
+    from google.colab import files
 
 # Initialize the recognizer
-recognizer = sr.Recognizer()
+    recognizer = sr.Recognizer()
 
-uploaded = files.upload()
+    uploaded = files.upload()
 
 # Convert OGG to WAV
-audio = AudioSegment.from_ogg("WhatsApp124.ogg")
-audio.export("converted.wav", format="wav")
-audio_file = "converted.wav"
+    audio = AudioSegment.from_ogg("WhatsApp124.ogg")
+    audio.export("converted.wav", format="wav")
+    audio_file = "converted.wav"
 
 # Load the audio file
-with sr.AudioFile(audio_file) as source:
+    with sr.AudioFile(audio_file) as source:
     audio_data = recognizer.record(source)
 
     # Recognize the speech in the audio
