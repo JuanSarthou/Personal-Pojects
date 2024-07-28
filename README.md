@@ -1,7 +1,7 @@
     !pip install SpeechRecognition pydub
     !apt-get install -y ffmpeg
 
-import speech_recognition as sr
+    import speech_recognition as sr
     from pydub import AudioSegment
     from google.colab import files
 
