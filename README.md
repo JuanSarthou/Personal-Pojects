@@ -1,5 +1,5 @@
-!pip install SpeechRecognition pydub
-!apt-get install -y ffmpeg
+    !pip install SpeechRecognition pydub
+    !apt-get install -y ffmpeg
 
 import speech_recognition as sr
     from pydub import AudioSegment
